@@ -832,7 +832,6 @@ vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2ed395ac4019876d74f3f31a
 vendor/bin/nv_mac
 
 # OMX
-vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAmrDec.so
@@ -849,7 +848,6 @@ vendor/lib/libdsd2pcm.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmulawdec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libI420colorconvert.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAmrDec.so
