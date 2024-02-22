@@ -51,15 +51,6 @@ on early-boot
     chown system system /mnt/vendor/persist/data/pfm/licenses/store_4
     chmod 0664 /mnt/vendor/persist/data/pfm/licenses/store_4
 
-    # SSR
-    write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys1/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys2/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys3/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys4/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys5/restart_level RELATED
-    write /sys/bus/msm_subsys/devices/subsys6/restart_level RELATED
-
 on boot
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
@@ -169,6 +160,15 @@ on post-fs-data
     write /data/vendor/radio/db_check_done 0
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
+
+service vendor.ssr_setup /vendor/bin/ssr_setup
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:persist.vendor.ssr.restart_level=*
+    start vendor.ssr_setup
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed"

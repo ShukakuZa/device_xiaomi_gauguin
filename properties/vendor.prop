@@ -212,6 +212,9 @@ persist.vendor.sensors.odl.adsp=true
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7225
 
+# Subsystem Restart
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # System properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 

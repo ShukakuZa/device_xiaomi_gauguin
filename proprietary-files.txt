@@ -1141,6 +1141,9 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Soter Service (Tencent)
 vendor/app/SoterService/SoterService.apk
 
+# Subsystem Restart
+vendor/bin/ssr_setup
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
