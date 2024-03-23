@@ -1,0 +1,5 @@
+# Global model
+ro.boot.product.vendor.sku=nfc
+ro.product.odm.device=gauguin
+ro.product.odm.model=M2007J17G
+ro.product.mod_device=gauguin_global

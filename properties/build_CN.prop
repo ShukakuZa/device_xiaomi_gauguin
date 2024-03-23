@@ -1,0 +1,5 @@
+# China model
+ro.boot.product.vendor.sku=nfc
+ro.product.odm.device=gauguinpro
+ro.product.odm.model=M2007J17C
+ro.product.mod_device=gauguin_global
