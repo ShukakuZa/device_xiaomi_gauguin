@@ -110,9 +110,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio-impl \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor:32 \
+    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor:64
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.device@1.0.vendor \
@@ -211,18 +211,18 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor:64
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-impl-qti:64 \
     android.hardware.gnss@2.1-service-qti \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libloc_socket
+    libbatching:64 \
+    libgeofencing:64 \
+    libgnss:64 \
+    libloc_socket:64
 
 PRODUCT_PACKAGES += \
     flp.conf \
@@ -303,7 +303,7 @@ PRODUCT_COPY_FILES += \
 
 # Keystore
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.1.vendor:64
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -335,7 +335,7 @@ PRODUCT_COPY_FILES += \
 
 # Media (Codec2)
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.0.vendor:64 \
     libcodec2_vndk.vendor
 
 # Mlipay
@@ -349,16 +349,16 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor:64
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
+    android.hardware.neuralnetworks@1.3.vendor:64
 
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor:64
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -411,7 +411,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
+    libjson:64
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -425,9 +425,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio@1.5.vendor:64 \
+    android.hardware.radio.config@1.2.vendor:64 \
+    android.hardware.radio.deprecated@1.0.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
