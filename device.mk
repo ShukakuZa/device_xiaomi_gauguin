@@ -60,6 +60,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # ANT+
 PRODUCT_PACKAGES += \
+    AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
 # Audio
