@@ -71,6 +71,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so|ecdf9f24262c49031c470b14a27d3f99d2b47ff4
 # Audio
 vendor/lib/hw/audio.primary.lito.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
