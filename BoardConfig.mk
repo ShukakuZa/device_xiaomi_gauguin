@@ -105,10 +105,6 @@ DEVICE_MANIFEST_NFC_FILES := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
     $(DEVICE_PATH)/configs/vintf/manifest-nfc.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gauguin
-TARGET_RECOVERY_DEVICE_MODULES := libinit_gauguin
-
 # Media
 TARGET_USES_ION := true
 
