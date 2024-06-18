@@ -334,6 +334,9 @@ PRODUCT_COPY_FILES += \
 
 # Media (Codec2)
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor
+
+PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor:64 \
     libcodec2_vndk.vendor
 
