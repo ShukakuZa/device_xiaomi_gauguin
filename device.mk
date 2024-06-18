@@ -28,7 +28,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksOverlay \
-    GauguinNfcOverlay \
     GauguinSettingsOverlay \
     GauguinSystemUIOverlay \
     GauguinTelephonyOverlay \
