@@ -456,16 +456,8 @@ PRODUCT_PACKAGES += \
 
 # System properties
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/properties/build_GLOBAL.prop:$(TARGET_COPY_OUT_ODM)/etc/build_GLOBAL.prop \
-    $(LOCAL_PATH)/properties/build_INDIA-pro.prop:$(TARGET_COPY_OUT_ODM)/etc/build_INDIA-pro.prop \
-    $(LOCAL_PATH)/properties/build_INDIA-std.prop:$(TARGET_COPY_OUT_ODM)/etc/build_INDIA-std.prop \
-    $(LOCAL_PATH)/properties/build_CN.prop:$(TARGET_COPY_OUT_ODM)/etc/build_CN.prop
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/properties/build_GLOBAL.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_GLOBAL.prop \
-    $(LOCAL_PATH)/properties/build_INDIA-pro.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_INDIA-pro.prop \
-    $(LOCAL_PATH)/properties/build_INDIA-std.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_INDIA-std.prop \
-    $(LOCAL_PATH)/properties/build_CN.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_CN.prop
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/properties/sku/,$(TARGET_COPY_OUT_ODM)/etc) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/properties/sku/,$(TARGET_COPY_OUT_RECOVERY)/root)
 
 # Telephony
 PRODUCT_PACKAGES += \
