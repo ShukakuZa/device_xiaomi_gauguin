@@ -18,6 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/gauguin-miuicamera/products/miuicamera.mk)
 
