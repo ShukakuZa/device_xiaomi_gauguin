@@ -520,6 +520,10 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.wifi.hostapd@1.2.vendor \
+    vendor.qti.hardware.wifi.supplicant@2.2.vendor
+
+PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
