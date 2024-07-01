@@ -127,8 +127,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libmegface \
-    libMegviiFacepp-0.5.2 \
     libpng.vendor
 
 PRODUCT_COPY_FILES += \
