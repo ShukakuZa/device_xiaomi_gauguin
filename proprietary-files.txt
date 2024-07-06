@@ -798,22 +798,22 @@ system_ext/lib64/libmmparser_lite.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
-# Media (C2)
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_v4l2codec.so
+# Media (C2) - from FP4
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
+vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
+vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
+vendor/lib/libqcodec2_core.so|e82b50bc9574436fdc8b881cb94ffa8fae409dd3
+vendor/lib/libqcodec2_platform.so|77f33c008a7b7c0b8f2b4c992b26c2da8e69fe24
+vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462
+vendor/lib/libqcodec2_v4l2codec.so|ffd18f2c4cfad643a3409165281cf1115488ad0a
 
-# Media configs
-vendor/etc/media_lagoon/video_system_specs.json
-vendor/etc/system_properties.xml
+# Media configs - from FP4
+vendor/etc/media_lagoon/video_system_specs.json|8a716b7a66b909e2e74600f9ae0e23e662b428ca
+vendor/etc/system_properties.xml|df9a0232bce88a3ca15b21de79b18a6917ea5e67
 
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
@@ -845,59 +845,53 @@ vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2ed395ac4019876d74f3f31a
 # NVMAC
 vendor/bin/nv_mac
 
-# OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libMpeg4SwEncoder.so
-vendor/lib/libMpeghSwEnc.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxDsdDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxG711Dec.so
-vendor/lib/libOmxMpeghDecSw.so
-vendor/lib/libOmxMpeghEncSw.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxSwVdec.so
-vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libOmxWmaDec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libswvdec.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libMpeg4SwEncoder.so
-vendor/lib64/libMpeghSwEnc.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxG711Dec.so
-vendor/lib64/libOmxMpeghEncSw.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxSwVdec.so
-vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVpp.so
-vendor/lib64/libOmxWmaDec.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libstagefright_soft_qtiflacdec.so
-vendor/lib64/libswvdec.so
+# OMX - from FP4
+vendor/lib/libAlacSwDec.so|cb41b0945e57b349e6aa476cdac4315ee13a2def
+vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
+vendor/lib/libFlacSwDec.so|6b17d0965c9f8bddab3ffd59e7bb16e92bb68d85
+vendor/lib/libMpeg4SwEncoder.so|5ece5c259302a936c83f8d216540b11024d56742
+vendor/lib/libMpeghSwEnc.so|ea2b1eccc81185e0553978b249c417f017576d90
+vendor/lib/libOmxAacDec.so|2c838bc2b94d035bd40cf2246da507f48e344229
+vendor/lib/libOmxAlacDec.so|60d81ff046a24d8b1823d8e51b1b1bab48f97f2a
+vendor/lib/libOmxAlacDecSw.so|be917abb87f621c8d721a03ed42016ae12bdbf8a
+vendor/lib/libOmxAmrDec.so|c77dcd74fd15ef5bd79cfc9e08bcafa245a8c2e5
+vendor/lib/libOmxAmrwbplusDec.so|d44097d7ae1ff0f96ae943393db0dd9364a83444
+vendor/lib/libOmxApeDec.so|f17478ee0351fdcb55fae6b1595cf3520b999f57
+vendor/lib/libOmxApeDecSw.so|a0980f890bfa7a04c4af2e3d40e176e7d7bbf693
+vendor/lib/libOmxDsdDec.so|93832f5a8e016a0cd419fca916f29a7987d4af9e
+vendor/lib/libOmxEvrcDec.so|f66932dda9b112aaeb1c4ef33a4157923e5cb5fe
+vendor/lib/libOmxG711Dec.so|8ce526383e8cf582d57e33811b7562986af4ec01
+vendor/lib/libOmxMpeghDecSw.so|c918ac2cfea5282bd1163b2fec56e87c01c43fbf
+vendor/lib/libOmxMpeghEncSw.so|440276eed570302cd51048c15005b925b63be97f
+vendor/lib/libOmxQcelp13Dec.so|5f0d0dd7f7c8c3f90b67fcadbd523bec1f977cfc
+vendor/lib/libOmxSwVdec.so|451e48ed0b131ec4e44194c3c8f6928037965500
+vendor/lib/libOmxSwVencMpeg4.so|85742b6565c9ec14e184d21ffc01839263ebacce
+vendor/lib/libOmxVideoDSMode.so|c4e36ec5ff61194d991ee7ac1a24998ed224b0c1
+vendor/lib/libOmxVpp.so|7ee2ea57a5c9d053f508f114e25c59d10627a613
+vendor/lib/libOmxWmaDec.so|e0fe63fbf43c7074ee2afce5e233029ae2283c5c
+vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
+vendor/lib/libswvdec.so|7d269da9b5b9b2f5e4ee3ce3b68e3725ce012ef0
+vendor/lib64/libAlacSwDec.so|2bd791269f5151fa6b6cfaaa1744f5c0ecb19d28
+vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
+vendor/lib64/libFlacSwDec.so|1aa31537b6f1f5752eb44486310647631cbb5c89
+vendor/lib64/libMpeg4SwEncoder.so|faf3705772ae55f8181bed997ac08bb9d1863abe
+vendor/lib64/libMpeghSwEnc.so|14b2f5d42aa43b0ca8c5cf0ebac467acf6e81847
+vendor/lib64/libOmxAacDec.so|9119f791c54a526e9b3f6d872926f1fa126249fa
+vendor/lib64/libOmxAlacDec.so|57cc3c29ab5a7eaade6cb7fa22748f7199e7b853
+vendor/lib64/libOmxAlacDecSw.so|fbf71a4d4e860a8da29588d18a679418e4317846
+vendor/lib64/libOmxAmrDec.so|00956d76fed0862feb2306cff9227b94b7dbe5b9
+vendor/lib64/libOmxAmrwbplusDec.so|45998160947caa58c8a134fe6c342d0ed22d3767
+vendor/lib64/libOmxApeDec.so|ff8815a17eefbd591a4f16c4bd8aa521e76ea860
+vendor/lib64/libOmxApeDecSw.so|fae380887e56c4887fddc3925bccaf28b9e3864a
+vendor/lib64/libOmxEvrcDec.so|7d0d3e8d549e6644be8dbbd98c8ce4daa7c5d404
+vendor/lib64/libOmxG711Dec.so|c0014821fd979353caa6bd10175f451be2723690
+vendor/lib64/libOmxMpeghEncSw.so|0dae5dce34679a23491730579d8d89373ae80d8c
+vendor/lib64/libOmxQcelp13Dec.so|0d2c50b4500cd0ef8bc37824acee71908df6b36c
+vendor/lib64/libOmxSwVdec.so|b43da1bd4c93c9cf560a6e33ce220c832d82b2d3
+vendor/lib64/libOmxSwVencMpeg4.so|17ac7ae89806ec4434d3404a015d3db70b3ac449
+vendor/lib64/libOmxVpp.so|85299c02bb0f830d5144fb0b01e2bf819169b3cb
+vendor/lib64/libOmxWmaDec.so|c5bc68a4cc5caa380562b543a7bfa0678374d391
+vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
 
 # Peripheral Manager
 vendor/bin/pm-proxy
