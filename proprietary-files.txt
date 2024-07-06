@@ -1,5 +1,5 @@
 # All unpinned blobs are extracted from gauguinin-user 12 RKQ1.200826.002 V14.0.3.0.SJSINXM release-keys.
-# FP4 : Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP1V:user/release-keys
+# FP4 : Fairphone/FP4eea/FP4:13/TKQ1.230127.002/TP2D:user/release-keys
 # gauguin_CN: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSMIXM release-keys
 
@@ -503,11 +503,9 @@ vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 
-# Display Postprocessing
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
-
 # Display Postprocessing - from FP4
+vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
 vendor/bin/hw/vendor.display.color@1.0-service|1fa47c2d3fff52c362848c59dbc40b4073c59ea9
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
