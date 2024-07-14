@@ -427,10 +427,12 @@ vendor/etc/init/init.batterysecret.rc
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
+vendor/bin/mutualex
 vendor/etc/cne/profileSlm.xml
 vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
+vendor/etc/init/mutualex.rc
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -505,9 +507,9 @@ vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 
-# Display Firmware
-vendor/firmware/NT36xxx_MP_Setting_Criteria_5935.csv
-vendor/firmware/NT36xxx_MP_Setting_Criteria_5937.csv
+# Display Postprocessing
+vendor/bin/qdcmss
+vendor/etc/init/qdcmss.rc
 
 # Display Postprocessing - from FP4
 vendor/bin/hw/vendor.display.color@1.0-service|1fa47c2d3fff52c362848c59dbc40b4073c59ea9
@@ -547,6 +549,7 @@ vendor/lib64/libdpmqmihal.so
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
+vendor/etc/gpfspath_oem_config.xml
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
