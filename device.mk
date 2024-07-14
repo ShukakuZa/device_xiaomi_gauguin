@@ -24,6 +24,8 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # MiuiCamera
 $(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
 
+#Viper4AndroidFX
+(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
