@@ -24,6 +24,7 @@ qemu.sf.lcd_density=440
 persist.sys.fuse.passthrough.enable=true
 
 # Media
+debug.stagefright.c2inputsurface=-1
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
