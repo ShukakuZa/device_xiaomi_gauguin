@@ -22,7 +22,10 @@ $(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Call the MiuiCamera setup
-$(call inherit-product-if-exists, vendor/xiaomi/gauguin-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
+#Viper4AndroidFX
+(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
