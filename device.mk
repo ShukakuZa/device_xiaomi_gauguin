@@ -21,6 +21,14 @@ $(call inherit-product, vendor/xiaomi/gauguin/gauguin-vendor.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/xiaomi/miuicamera/config.mk)
+
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-derp
+    
 # Overlays
 PRODUCT_PACKAGES += \
     GauguinApertureOverlay \
@@ -32,7 +40,7 @@ PRODUCT_PACKAGES += \
     GauguinWifiOverlay \
     SettingsOverlayM2007J17C \
     SettingsOverlayM2007J17G \
-    SettingsOverlayM2007J17I
+    SettingsOverlayM2007J17I 
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
