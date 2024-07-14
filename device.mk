@@ -31,6 +31,10 @@ $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-derp
+
 PRODUCT_PACKAGES += \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksOverlay \
