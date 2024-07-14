@@ -98,6 +98,11 @@ on post-fs-data
     mkdir /data/vendor/tui 0700 system drmrpc
     mkdir /data/vendor/tzstorage 0770 system system
     mkdir /data/vendor/vpp 0770 media media
+    
+    # Create folder of camera
+    mkdir /data/vendor/camera 0777 camera camera
+    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
+    chmod 0666 /dev/camlog
 
     # Create the directories used by fingerprint HAL
     mkdir /data/vendor/fpc 0770 system system
