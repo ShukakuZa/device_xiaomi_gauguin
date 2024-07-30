@@ -18,8 +18,6 @@ genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify 
 # IIO
 genfscon sysfs /bus/iio/devices                                                 u:object_r:vendor_sysfs_battery_supply:s0
 
-# kmsg
-genfscon proc /last_kmsg                                                        u:object_r:proc_last_kmsg:s0
 
 # Touchpanel
 genfscon sysfs /touchpanel                                                      u:object_r:sysfs_touchpanel:s0
