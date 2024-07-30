@@ -36,6 +36,9 @@
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
 
+#Memtrack AIDL HAL
+/(vendor|system/vendor)/bin/hw/vendor\.qti.hardware\.memtrack-service   u:object_r:hal_memtrack_default_exec:s0
+
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
 
