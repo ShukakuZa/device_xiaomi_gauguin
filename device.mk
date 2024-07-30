@@ -36,6 +36,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-derp
 
 PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksOverlay \
     GauguinSettingsOverlay \
@@ -150,6 +151,10 @@ PRODUCT_COPY_FILES += \
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
+
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
 
 # Data Services
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
