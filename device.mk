@@ -161,8 +161,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.mapper@1.1.vendor \
@@ -173,7 +171,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     gralloc.lito \
-    memtrack.lito
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.11.vendor \
@@ -343,6 +340,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor
+
+# Memtrack AIDL
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
 
 # Mlipay
 PRODUCT_PACKAGES += \
